@@ -9,7 +9,6 @@ use Exception;
  */
 class PersonalTrainerException extends Exception
 {
-    protected array $extraData;
 
     public static function wrongParam(string $message = null, array $data = []): PersonalTrainerException
     {
