@@ -11,5 +11,4 @@ interface ExpertSolution
     public function provideSolution(array $lifeStyleTags = []);
 
     // 우선순위 설정 메소드
-    public function setPriority();
 }

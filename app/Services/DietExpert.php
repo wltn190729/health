@@ -4,16 +4,16 @@ namespace App\Services;
 
 use App\Interfaces\ExpertSolution;
 
-class DietExpert implements ExpertSolution
+class DietExpert extends ExpertCoach implements ExpertSolution
 {
 
-    public function provideSolution(array $lifeStyleTags = [])
+    public function __construct()
     {
-        // TODO: Implement provideSolution() method.
+        // 상속 받은 클래스에 고객이 제공한 라이프 스타일 태그 set
+        $this->setFitSolutions([
+            'Intermittent Fasting' => ['enough_time', 'strong_will'],
+            'LCHF' => ['enough_money']
+        ]);
     }
 
-    public function setPriority()
-    {
-        // TODO: Implement setPriority() method.
-    }
 }
