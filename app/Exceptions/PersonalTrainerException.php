@@ -5,7 +5,7 @@ namespace App\Exceptions;
 use Exception;
 
 /**
- * 주문 상품 Exception
+ * Exception
  */
 class PersonalTrainerException extends Exception
 {
