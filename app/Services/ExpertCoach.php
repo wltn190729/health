@@ -18,9 +18,9 @@ class ExpertCoach implements ExpertSolution
     {
         // 최적의 솔루션
         $fitSolution = null;
-
         // 라이프 스타일 태그 포함된 개수
         $maxMatchCount = 0;
+        // 태그가 1개일 때 포함할 배열 선언
         $singleFitSolution = [];
         foreach ($this->fitSolutions as $solution => $tags) {
             // 라이프 스타일 태그가 포함되면 카운트 증가

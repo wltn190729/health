@@ -13,7 +13,12 @@ enum LifeStyleTag: string
     // 유효한 값이 있는지 확인하는 메소드
     public static function isValid(string $tag): bool
     {
-        return in_array($tag, self::cases());
+        $validValues = [];
+        foreach (self::cases() as $case) {
+            $validValues[] = $case->value;
+        }
+
+        return in_array($tag, $validValues);
     }
 
 }

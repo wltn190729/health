@@ -10,5 +10,6 @@ interface ExpertSolution
     // 솔루션 제공 메소드
     public function provideSolution(array $lifeStyleTags = []);
 
-    // 우선순위 설정 메소드
+    public function setFitSolutions(array $solutions);
+
 }

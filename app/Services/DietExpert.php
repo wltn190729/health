@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Interfaces\ExpertSolution;
 
-class DietExpert extends ExpertCoach implements ExpertSolution
+class DietExpert extends ExpertCoach
 {
 
     public function __construct()
